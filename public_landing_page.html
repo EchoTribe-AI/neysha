@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>YouX Companion - Your Transformation</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-variant": "#e4e2df",
+                    "on-surface-variant": "#43474a",
+                    "primary-fixed": "#d2e5f1",
+                    "surface-tint": "#4f616b",
+                    "on-primary-container": "#96a9b4",
+                    "primary-fixed-dim": "#b6c9d5",
+                    "primary": "#162831",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-high": "#eae8e5",
+                    "outline-variant": "#c3c7ca",
+                    "inverse-on-surface": "#f2f0ed",
+                    "on-secondary-fixed": "#0a1e28",
+                    "inverse-primary": "#b6c9d5",
+                    "on-error-container": "#93000a",
+                    "inverse-surface": "#30312f",
+                    "on-secondary-container": "#536571",
+                    "on-secondary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "secondary": "#4e616d",
+                    "tertiary": "#352200",
+                    "on-tertiary-container": "#c5a065",
+                    "tertiary-container": "#503704",
+                    "background": "#fbf9f6",
+                    "surface-container-highest": "#e4e2df",
+                    "secondary-fixed": "#d2e5f3",
+                    "primary-container": "#2c3e47",
+                    "surface-bright": "#fbf9f6",
+                    "surface": "#fbf9f6",
+                    "on-background": "#1b1c1a",
+                    "tertiary-fixed": "#ffdeac",
+                    "tertiary-fixed-dim": "#e8c082",
+                    "on-primary": "#ffffff",
+                    "surface-container": "#efeeeb",
+                    "outline": "#73787b",
+                    "secondary-fixed-dim": "#b6c9d7",
+                    "on-surface": "#1b1c1a",
+                    "on-secondary-fixed-variant": "#374954",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-fixed": "#0b1e26",
+                    "surface-container-low": "#f5f3f0",
+                    "on-error": "#ffffff",
+                    "on-tertiary-fixed": "#281900",
+                    "secondary-container": "#cfe2f0",
+                    "on-tertiary-fixed-variant": "#5d420f",
+                    "error": "#ba1a1a",
+                    "on-primary-fixed-variant": "#374953",
+                    "surface-dim": "#dbdad7"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": [
+                            "Noto Serif"
+                    ],
+                    "body": [
+                            "Manrope"
+                    ],
+                    "label": [
+                            "Manrope"
+                    ]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; }
+        .serif { font-family: 'Noto Serif', serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .tap-highlight-transparent { -webkit-tap-highlight-color: transparent; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface">
+<!-- TopAppBar -->
+<nav class="bg-[#fbf9f6] dark:bg-slate-950 text-[#162831] dark:text-slate-100 docked full-width top-0 sticky z-50">
+<div class="flex justify-between items-center w-full px-6 py-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-2xl" data-icon="spa">spa</span>
+<span class="font-serif text-xl font-bold text-[#162831] dark:text-slate-100 tracking-tighter">YouX Companion</span>
+</div>
+<div class="flex items-center gap-6">
+<button class="font-sans uppercase tracking-widest text-[11px] font-semibold text-[#162831] hover:opacity-80 transition-opacity">Login</button>
+<div class="w-8 h-8 rounded-full bg-surface-container-highest overflow-hidden">
+<img alt="Lotus flower brand icon" class="w-full h-full object-cover" data-alt="Soft ethereal close-up of a white lotus flower in calm water with gentle morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVAM5cDRqkltbndWOUxMVODHu0SFrLSpjObR66_oqH4_je692a3P1TMZ4trwHna2xg5UVYHGZRKBlYvbzCwp4ojHrkRGLBLvbtT128k48Ei19CMHrS01pNbIJ_dW8c6mGjuH6We1US--MAOCyokwr4vzt8gvDpCGRYWROEP9YamvKEXGYYedJraPQxRowiL9LO5Jk1LqnI66GsExxPRHmmVi_qo1cNs3nN0H0UJ11V8xuPBAsGBARqQq5IVn05TNE3gESUbjw53A0"/>
+</div>
+</div>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[751px] flex items-center px-6 md:px-20 py-20 overflow-hidden">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-7xl mx-auto w-full z-10">
+<div class="flex flex-col items-start space-y-8">
+<h1 class="serif text-5xl md:text-7xl font-bold text-primary tracking-tighter leading-[1.1]">
+                        Your transformation, always within reach
+                    </h1>
+<p class="text-secondary text-lg md:text-xl max-w-lg leading-relaxed">
+                        Experience a new standard of personal growth. Expert guidance tailored to your rhythm, delivered with the touch of a modern concierge.
+                    </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="bg-primary text-on-primary px-8 py-4 text-xs font-bold uppercase tracking-widest rounded-sm hover:opacity-90 active:scale-95 transition-all">
+                            Start Free
+                        </button>
+<button class="border-[1.5px] border-tertiary-fixed-dim text-tertiary px-8 py-4 text-xs font-bold uppercase tracking-widest rounded-sm hover:bg-tertiary/5 active:scale-95 transition-all">
+                            Explore Programs
+                        </button>
+</div>
+</div>
+<div class="relative flex justify-center md:justify-end">
+<div class="w-full max-w-md aspect-[4/5] bg-surface-container-low rounded-sm overflow-hidden relative group">
+<img alt="Professional portrait of Neysha" class="w-full h-full object-cover grayscale contrast-125" data-alt="Professional editorial portrait of a confident woman in elegant dark attire against a warm neutral studio background with soft side lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSO0MtvOZFdBMLScKP3did3dTumbZaepaKJfkbYrPp0x104G0mGfcevIUxYmxD94rHI-3eSYJNkBPOygh6JJcknOrlogHjy3AuWFWps4hrsTt_qy11Ed8Co2Cfn6Q4fKrQ7j2gUQFF3_poaDWKBG2RJic8JlwzMdk_XZGSNds8go5S2ky6Yxuczt5y8aJ0XY4FvnhjgRRRYGaLezYOtOxL4wsO2ZCqyYydCeW_Kj7bB4mKSSkoXQP5sSYYoV-tGR9EMHTBXwxdL2s"/>
+<div class="absolute bottom-6 left-6 bg-surface-container-lowest/90 backdrop-blur px-4 py-2">
+<span class="text-[10px] font-bold uppercase tracking-[0.2em] text-primary">Neysha Arcelay</span>
+</div>
+</div>
+<!-- Decorative element -->
+<div class="absolute -z-10 -right-20 -top-20 w-80 h-80 bg-surface-container-high rounded-full blur-3xl opacity-50"></div>
+</div>
+</div>
+</section>
+<!-- Pricing Section -->
+<section class="bg-surface-container-low py-24 px-6">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
+<div class="space-y-4">
+<span class="label-md font-bold text-[10px] uppercase tracking-[0.2em] text-tertiary">Select Your Journey</span>
+<h2 class="serif text-4xl md:text-5xl font-bold text-primary tracking-tighter">Tiered Experience</h2>
+</div>
+<p class="text-secondary max-w-xs text-sm">Transparent pathways designed for every stage of your evolution.</p>
+</div>
+<div class="flex overflow-x-auto pb-8 md:grid md:grid-cols-3 gap-8 no-scrollbar -mx-6 px-6 md:mx-0 md:px-0">
+<!-- Free Tier -->
+<div class="min-w-[300px] bg-surface-container-lowest p-10 flex flex-col justify-between h-full group hover:translate-y-[-4px] transition-transform duration-300">
+<div>
+<span class="text-[10px] font-extrabold uppercase tracking-widest text-secondary mb-8 block">Free</span>
+<div class="mb-10">
+<h3 class="serif text-3xl font-bold text-primary mb-2">Introduction</h3>
+<div class="flex items-baseline gap-1">
+<span class="text-2xl font-serif text-primary">$0</span>
+<span class="text-[10px] text-secondary font-bold uppercase tracking-widest">/mo</span>
+</div>
+</div>
+<ul class="space-y-5 mb-12">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-sm text-tertiary mt-0.5" data-icon="check">check</span>
+<span class="text-sm text-on-surface-variant leading-tight">Daily mindfulness cues</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-sm text-tertiary mt-0.5" data-icon="check">check</span>
+<span class="text-sm text-on-surface-variant leading-tight">Public community access</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-sm text-tertiary mt-0.5" data-icon="check">check</span>
+<span class="text-sm text-on-surface-variant leading-tight">Limited library access</span>
+</li>
+</ul>
+</div>
+<button class="w-full py-4 text-[10px] font-bold uppercase tracking-[0.15em] text-primary border border-primary/20 hover:bg-primary hover:text-on-primary transition-colors">
+                            Current Tier
+                        </button>
+</div>
+<!-- Companion Tier (Active) -->
+<div class="min-w-[300px] bg-primary p-10 flex flex-col justify-between h-full scale-105 shadow-xl md:shadow-none z-10">
+<div>
+<div class="flex justify-between items-center mb-8">
+<span class="text-[10px] font-extrabold uppercase tracking-widest text-tertiary-fixed-dim">Companion</span>
+<span class="bg-tertiary-fixed-dim/20 text-tertiary-fixed-dim text-[8px] px-2 py-1 uppercase tracking-widest font-bold">Recommended</span>
+</div>
+<div class="mb-10 text-on-primary">
+<h3 class="serif text-3xl font-bold mb-2">Deep Work</h3>
+<div class="flex items-baseline gap-1">
+<span class="text-2xl font-serif">$29</span>
+<span class="text-[10px] opacity-60 font-bold uppercase tracking-widest">/mo</span>
+</div>
+</div>
+<ul class="space-y-5 mb-12">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-sm text-tertiary-fixed-dim mt-0.5" data-icon="check">check</span>
+<span class="text-sm text-white/80 leading-tight">Full practice library</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-sm text-tertiary-fixed-dim mt-0.5" data-icon="check">check</span>
+<span class="text-sm text-white/80 leading-tight">Priority chat support</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-sm text-tertiary-fixed-dim mt-0.5" data-icon="check">check</span>
+<span class="text-sm text-white/80 leading-tight">Monthly group circles</span>
+</li>
+</ul>
+</div>
+<button class="w-full py-4 text-[10px] font-bold uppercase tracking-[0.15em] bg-tertiary-fixed-dim text-tertiary hover:opacity-90 transition-opacity">
+                            Go Companion
+                        </button>
+</div>
+<!-- VIP Tier -->
+<div class="min-w-[300px] bg-surface-container-lowest p-10 flex flex-col justify-between h-full group hover:translate-y-[-4px] transition-transform duration-300">
+<div>
+<span class="text-[10px] font-extrabold uppercase tracking-widest text-secondary mb-8 block">VIP</span>
+<div class="mb-10">
+<h3 class="serif text-3xl font-bold text-primary mb-2">Bespoke</h3>
+<div class="flex items-baseline gap-1">
+<span class="text-2xl font-serif text-primary">$199</span>
+<span class="text-[10px] text-secondary font-bold uppercase tracking-widest">/mo</span>
+</div>
+</div>
+<ul class="space-y-5 mb-12">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-sm text-tertiary mt-0.5" data-icon="check">check</span>
+<span class="text-sm text-on-surface-variant leading-tight">1-on-1 monthly session</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-sm text-tertiary mt-0.5" data-icon="check">check</span>
+<span class="text-sm text-on-surface-variant leading-tight">Customized curriculum</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-sm text-tertiary mt-0.5" data-icon="check">check</span>
+<span class="text-sm text-on-surface-variant leading-tight">24/7 concierge line</span>
+</li>
+</ul>
+</div>
+<button class="w-full py-4 text-[10px] font-bold uppercase tracking-[0.15em] text-primary border border-primary/20 hover:bg-primary hover:text-on-primary transition-colors">
+                            Upgrade to VIP
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / Final CTA -->
+<section class="py-24 px-6 bg-surface">
+<div class="max-w-4xl mx-auto text-center space-y-8">
+<span class="material-symbols-outlined text-4xl text-tertiary-fixed-dim" data-icon="auto_awesome">auto_awesome</span>
+<h2 class="serif text-4xl md:text-5xl font-bold text-primary">Begin your quiet revolution.</h2>
+<p class="text-secondary text-lg">Join 1,000+ others receiving weekly wisdom and exclusive practice invitations.</p>
+<div class="flex flex-col sm:flex-row gap-0 max-w-md mx-auto border-b border-primary/20">
+<input class="flex-grow bg-transparent border-none py-4 text-[10px] font-bold tracking-widest focus:ring-0 placeholder:text-outline" placeholder="YOUR EMAIL ADDRESS" type="email"/>
+<button class="py-4 px-6 text-[10px] font-extrabold uppercase tracking-[0.2em] text-tertiary hover:opacity-70 transition-opacity">
+                        Subscribe
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface py-16 px-6 border-t border-surface-container">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-xl" data-icon="spa">spa</span>
+<span class="serif font-bold text-primary tracking-tighter">YouX Companion</span>
+</div>
+<p class="text-[11px] font-medium text-secondary uppercase tracking-widest">© 2024 YouX Companion. All rights reserved.</p>
+</div>
+<div class="flex flex-wrap gap-x-12 gap-y-6">
+<a class="text-[10px] font-bold uppercase tracking-[0.2em] text-primary hover:text-tertiary transition-colors" href="#">neyshaarcelay.com</a>
+<a class="text-[10px] font-bold uppercase tracking-[0.2em] text-primary hover:text-tertiary transition-colors" href="#">Withme</a>
+<a class="text-[10px] font-bold uppercase tracking-[0.2em] text-primary hover:text-tertiary transition-colors" href="#">Privacy</a>
+<a class="text-[10px] font-bold uppercase tracking-[0.2em] text-primary hover:text-tertiary transition-colors" href="#">Instagram</a>
+</div>
+</div>
+</footer>
+<!-- Mobile Navigation Shell (Suppressed for landing page focused content, but kept as reference for structural consistency) -->
+<div class="hidden md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center pb-safe pt-2 px-4 bg-[#ffffff] border-t border-[#8B9EAB]/20 shadow-[0px_-4px_12px_rgba(139,158,171,0.08)] z-50">
+<div class="flex flex-col items-center justify-center text-[#352200] scale-110">
+<span class="material-symbols-outlined" data-icon="home" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-sans uppercase tracking-widest text-[10px] font-semibold mt-1">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#8B9EAB]">
+<span class="material-symbols-outlined" data-icon="event_seat">event_seat</span>
+<span class="font-sans uppercase tracking-widest text-[10px] font-semibold mt-1">Sessions</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#8B9EAB]">
+<span class="material-symbols-outlined" data-icon="self_improvement">self_improvement</span>
+<span class="font-sans uppercase tracking-widest text-[10px] font-semibold mt-1">Practice</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#8B9EAB]">
+<span class="material-symbols-outlined" data-icon="chat_bubble">chat_bubble</span>
+<span class="font-sans uppercase tracking-widest text-[10px] font-semibold mt-1">Messages</span>
+</div>
+</div>
+</body></html>

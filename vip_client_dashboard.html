@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>VIP Client Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-variant": "#e4e2df",
+                        "on-surface-variant": "#43474a",
+                        "primary-fixed": "#d2e5f1",
+                        "surface-tint": "#4f616b",
+                        "on-primary-container": "#96a9b4",
+                        "primary-fixed-dim": "#b6c9d5",
+                        "primary": "#162831",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-high": "#eae8e5",
+                        "outline-variant": "#c3c7ca",
+                        "inverse-on-surface": "#f2f0ed",
+                        "on-secondary-fixed": "#0a1e28",
+                        "inverse-primary": "#b6c9d5",
+                        "on-error-container": "#93000a",
+                        "inverse-surface": "#30312f",
+                        "on-secondary-container": "#536571",
+                        "on-secondary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "secondary": "#4e616d",
+                        "tertiary": "#352200",
+                        "on-tertiary-container": "#c5a065",
+                        "tertiary-container": "#503704",
+                        "background": "#fbf9f6",
+                        "surface-container-highest": "#e4e2df",
+                        "secondary-fixed": "#d2e5f3",
+                        "primary-container": "#2c3e47",
+                        "surface-bright": "#fbf9f6",
+                        "surface": "#fbf9f6",
+                        "on-background": "#1b1c1a",
+                        "tertiary-fixed": "#ffdeac",
+                        "tertiary-fixed-dim": "#e8c082",
+                        "on-primary": "#ffffff",
+                        "surface-container": "#efeeeb",
+                        "outline": "#73787b",
+                        "secondary-fixed-dim": "#b6c9d7",
+                        "on-surface": "#1b1c1a",
+                        "on-secondary-fixed-variant": "#374954",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed": "#0b1e26",
+                        "surface-container-low": "#f5f3f0",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed": "#281900",
+                        "secondary-container": "#cfe2f0",
+                        "on-tertiary-fixed-variant": "#5d420f",
+                        "error": "#ba1a1a",
+                        "on-primary-fixed-variant": "#374953",
+                        "surface-dim": "#dbdad7"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Manrope', sans-serif; }
+        h1, h2, h3 { font-family: 'Noto Serif', serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-primary min-h-screen pb-32">
+<!-- TopAppBar -->
+<nav class="sticky top-0 z-50 bg-[#fbf9f6] dark:bg-slate-950 flex justify-between items-center w-full px-6 py-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#162831] dark:text-slate-100 text-2xl" data-icon="spa">spa</span>
+<span class="font-serif text-xl font-bold text-[#162831] dark:text-slate-100 tracking-tighter">YouX Companion</span>
+</div>
+<div class="w-8 h-8 rounded-full overflow-hidden border border-mist/20">
+<img class="w-full h-full object-cover" data-alt="professional headshot of a person in high-end office attire with soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCu5vZVNdjODyj8hgbzCIKu_KbFM-PjAiaAPWect_YQkyqO4Fti5Q0bI4qgiuUa7UvTczqHS1uyZLQusb09msCm-n7jsKvYyiZFLViW1kY6IGXVvt6eat2LX8NU_VJLP4E8AK4ncx9n394I_iz4ZxkTvMzrMxBIQXWaVBqeae_C31OlBPv_r5-sKDIbz-uq4DzYS99cpsA8GUtgiBFsXfpbFvbPj-etDkInuWSttXO3AO6eV1u3kppb8AtmQubh7eydSxiOS55hRFU"/>
+</div>
+</nav>
+<main class="max-w-xl mx-auto px-6 space-y-8 mt-4">
+<!-- Hero Greeting Card -->
+<section class="bg-primary text-on-primary p-8 rounded-sm shadow-lg overflow-hidden relative">
+<div class="relative z-10 space-y-6">
+<div class="flex justify-between items-start">
+<h1 class="text-4xl leading-tight font-headline tracking-tighter italic">Good Morning,<br/>Alexander</h1>
+<div class="text-right">
+<span class="block text-[10px] font-label uppercase tracking-[0.2em] opacity-60">Streak</span>
+<span class="text-2xl font-headline italic text-tertiary-fixed-dim">12 Day Streak</span>
+</div>
+</div>
+<div class="pt-4 border-t border-white/10 flex flex-col gap-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary-fixed-dim" data-icon="calendar_today">calendar_today</span>
+<div>
+<p class="text-[10px] font-label uppercase tracking-widest opacity-60">Next Session</p>
+<p class="text-sm font-medium">Thursday, Oct 24 • 10:00 AM</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary-fixed-dim" data-icon="lightbulb">lightbulb</span>
+<div>
+<p class="text-[10px] font-label uppercase tracking-widest opacity-60">Today's Intention</p>
+<p class="text-sm font-medium italic">Focus and Clarity</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Decorative Grain/Texture Overlay -->
+<div class="absolute inset-0 opacity-10 pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/natural-paper.png')]"></div>
+</section>
+<!-- Quick Action Bento Grid -->
+<section>
+<h2 class="text-[10px] font-label uppercase tracking-[0.3em] mb-4 text-mist">Quick Access</h2>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-surface-container-lowest p-6 flex flex-col aspect-square justify-between group active:scale-95 transition-transform duration-200">
+<span class="material-symbols-outlined text-tertiary text-3xl" data-icon="smart_toy">smart_toy</span>
+<div>
+<h3 class="text-lg font-headline italic">AI Companion</h3>
+<p class="text-[10px] font-label uppercase tracking-widest text-mist mt-1">Chat Now</p>
+</div>
+</div>
+<div class="bg-surface-container-low p-6 flex flex-col aspect-square justify-between group active:scale-95 transition-transform duration-200">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="self_improvement">self_improvement</span>
+<div>
+<h3 class="text-lg font-headline italic">Daily Practice</h3>
+<p class="text-[10px] font-label uppercase tracking-widest text-mist mt-1">10 Min Session</p>
+</div>
+</div>
+<div class="bg-surface-container-low p-6 flex flex-col aspect-square justify-between group active:scale-95 transition-transform duration-200">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="event_note">event_note</span>
+<div>
+<h3 class="text-lg font-headline italic">Sessions</h3>
+<p class="text-[10px] font-label uppercase tracking-widest text-mist mt-1">Calendar</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-6 flex flex-col aspect-square justify-between group active:scale-95 transition-transform duration-200">
+<span class="material-symbols-outlined text-tertiary text-3xl" data-icon="menu_book">menu_book</span>
+<div>
+<h3 class="text-lg font-headline italic">Homework</h3>
+<p class="text-[10px] font-label uppercase tracking-widest text-mist mt-1">2 New Tasks</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Coach Message Card -->
+<section>
+<h2 class="text-[10px] font-label uppercase tracking-[0.3em] mb-4 text-mist">From Your Coach</h2>
+<div class="bg-surface-container-low p-8 rounded-sm">
+<div class="flex items-center gap-4 mb-6">
+<div class="w-12 h-12 rounded-full overflow-hidden border-2 border-tertiary-fixed-dim">
+<img class="w-full h-full object-cover" data-alt="portrait of a confident female professional coach in a bright modern studio setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiNqC3XRy4SxhRLXwxiVOVZPUdv8Z1aehUb0v9lXTWhXOa2qpOUGoLq-ahixuvYhLU_elmB46oJ6-0L-05K5xcFf4oRZMyDDBc134XVRz3mEOWJm2mP6bsvfhs8GsDSPv0gdYwoC7L64lz2xJLiIzMW9jl-hO-CdrNUCM7LmnAyIqB4iUqVLzH5lJAWHT0mZvha_RqR1GdmAtsXWHQiskqZPYheJVCYpxcRLRi79G0OMr83dK7tyR1pQqAKD1ZnQFH0dGZdpMRP5c"/>
+</div>
+<div>
+<h3 class="text-lg font-headline italic">Neysha V.</h3>
+<p class="text-[10px] font-label uppercase tracking-widest text-mist">Executive Coach</p>
+</div>
+</div>
+<p class="text-primary/80 font-body leading-relaxed italic mb-8">
+                    "I've been reviewing your reflection from yesterday's exercise. The way you're approaching the boundary setting in your leadership role is showing real growth..."
+                </p>
+<button class="w-full bg-primary text-on-primary py-4 text-[11px] font-label uppercase tracking-[0.2em] flex items-center justify-center gap-2 hover:opacity-90 active:scale-[0.98] transition-all">
+<span>Reply</span>
+<span class="material-symbols-outlined text-sm" data-icon="send">send</span>
+</button>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center pb-safe pt-2 px-4 bg-[#ffffff] dark:bg-slate-900 border-t border-[#8B9EAB]/20 z-50 shadow-[0px_-4px_12px_rgba(139,158,171,0.08)] h-20">
+<div class="flex flex-col items-center justify-center text-[#352200] dark:text-[#e8c082] scale-110">
+<span class="material-symbols-outlined" data-icon="home" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-sans uppercase tracking-widest text-[10px] font-semibold mt-1">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#8B9EAB] dark:text-slate-500 hover:text-[#162831] dark:hover:text-white transition-colors">
+<span class="material-symbols-outlined" data-icon="event_seat">event_seat</span>
+<span class="font-sans uppercase tracking-widest text-[10px] font-semibold mt-1">Sessions</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#8B9EAB] dark:text-slate-500 hover:text-[#162831] dark:hover:text-white transition-colors">
+<span class="material-symbols-outlined" data-icon="self_improvement">self_improvement</span>
+<span class="font-sans uppercase tracking-widest text-[10px] font-semibold mt-1">Practice</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#8B9EAB] dark:text-slate-500 hover:text-[#162831] dark:hover:text-white transition-colors">
+<span class="material-symbols-outlined" data-icon="chat_bubble">chat_bubble</span>
+<span class="font-sans uppercase tracking-widest text-[10px] font-semibold mt-1">Messages</span>
+</div>
+</nav>
+</body></html>

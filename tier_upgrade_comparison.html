@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-variant": "#e4e2df",
+                    "on-surface-variant": "#43474a",
+                    "primary-fixed": "#d2e5f1",
+                    "surface-tint": "#4f616b",
+                    "on-primary-container": "#96a9b4",
+                    "primary-fixed-dim": "#b6c9d5",
+                    "primary": "#162831",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-high": "#eae8e5",
+                    "outline-variant": "#c3c7ca",
+                    "inverse-on-surface": "#f2f0ed",
+                    "on-secondary-fixed": "#0a1e28",
+                    "inverse-primary": "#b6c9d5",
+                    "on-error-container": "#93000a",
+                    "inverse-surface": "#30312f",
+                    "on-secondary-container": "#536571",
+                    "on-secondary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "secondary": "#4e616d",
+                    "tertiary": "#352200",
+                    "on-tertiary-container": "#c5a065",
+                    "tertiary-container": "#503704",
+                    "background": "#fbf9f6",
+                    "surface-container-highest": "#e4e2df",
+                    "secondary-fixed": "#d2e5f3",
+                    "primary-container": "#2c3e47",
+                    "surface-bright": "#fbf9f6",
+                    "surface": "#fbf9f6",
+                    "on-background": "#1b1c1a",
+                    "tertiary-fixed": "#ffdeac",
+                    "tertiary-fixed-dim": "#e8c082",
+                    "on-primary": "#ffffff",
+                    "surface-container": "#efeeeb",
+                    "outline": "#73787b",
+                    "secondary-fixed-dim": "#b6c9d7",
+                    "on-surface": "#1b1c1a",
+                    "on-secondary-fixed-variant": "#374954",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-fixed": "#0b1e26",
+                    "surface-container-low": "#f5f3f0",
+                    "on-error": "#ffffff",
+                    "on-tertiary-fixed": "#281900",
+                    "secondary-container": "#cfe2f0",
+                    "on-tertiary-fixed-variant": "#5d420f",
+                    "error": "#ba1a1a",
+                    "on-primary-fixed-variant": "#374953",
+                    "surface-dim": "#dbdad7"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; }
+        .font-serif { font-family: 'Noto Serif', serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface antialiased">
+<!-- Top Navigation (Shell suppressed for Transactional/Focused screen) -->
+<header class="flex justify-between items-center w-full px-6 py-6 sticky top-0 bg-surface z-50">
+<button aria-label="Go back" class="flex items-center justify-center w-10 h-10 hover:bg-surface-container-high transition-colors rounded-sm">
+<span class="material-symbols-outlined text-primary" data-icon="arrow_back">arrow_back</span>
+</button>
+<div class="font-serif text-xl font-bold text-primary">YouX Companion</div>
+<div class="w-10"></div> <!-- Spacer for balance -->
+</header>
+<main class="max-w-6xl mx-auto px-6 pb-20">
+<!-- Hero Header -->
+<section class="mt-12 mb-16 text-center lg:text-left flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8">
+<div class="max-w-2xl">
+<p class="font-label uppercase tracking-widest text-xs text-tertiary font-bold mb-4">Elevate your practice</p>
+<h1 class="font-serif text-5xl md:text-7xl text-primary tracking-tighter leading-tight">Ready to go deeper?</h1>
+</div>
+<p class="text-secondary font-body max-w-sm text-lg leading-relaxed">
+                Choose the path that aligns with your journey toward mindful presence and lasting growth.
+            </p>
+</section>
+<!-- Tier Comparison Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-6 items-stretch">
+<!-- Tier: Free (Current) -->
+<div class="bg-surface-container-low p-8 flex flex-col h-full border border-transparent">
+<div class="mb-8">
+<span class="font-label uppercase tracking-widest text-[10px] font-bold text-secondary">Base Tier</span>
+<h2 class="font-serif text-3xl text-primary mt-2">Free</h2>
+<p class="text-secondary mt-2 text-sm">Essential tools for your daily mindful routine.</p>
+</div>
+<div class="flex-grow space-y-6">
+<div class="h-px bg-on-surface-variant/10 w-full"></div>
+<ul class="space-y-4">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-sm text-secondary mt-0.5" data-icon="check">check</span>
+<span class="text-sm font-body text-on-surface">Daily Reflection Prompts</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-sm text-secondary mt-0.5" data-icon="check">check</span>
+<span class="text-sm font-body text-on-surface">Weekly Progress Summary</span>
+</li>
+<li class="flex items-start gap-3 text-secondary/50">
+<span class="material-symbols-outlined text-sm mt-0.5" data-icon="lock">lock</span>
+<span class="text-sm font-body italic">Limited Practice Library</span>
+</li>
+</ul>
+</div>
+<div class="mt-12">
+<div class="w-full py-4 text-center border border-outline-variant/30 text-secondary text-xs uppercase tracking-widest font-bold">
+                        Current Plan
+                    </div>
+</div>
+</div>
+<!-- Tier: Companion (Highlighted) -->
+<div class="bg-surface-container-lowest p-8 flex flex-col h-full relative border-[1.5px] border-tertiary-fixed-dim shadow-[0px_12px_32px_rgba(139,158,171,0.08)]">
+<div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-tertiary-fixed text-on-tertiary-fixed px-4 py-1 text-[10px] font-bold uppercase tracking-[0.2em]">
+                    Most popular
+                </div>
+<div class="mb-8">
+<span class="font-label uppercase tracking-widest text-[10px] font-bold text-tertiary">Recommended</span>
+<h2 class="font-serif text-3xl text-primary mt-2">Companion</h2>
+<p class="text-secondary mt-2 text-sm italic">Unlock the full curated experience.</p>
+</div>
+<div class="flex-grow space-y-6">
+<div class="h-px bg-tertiary-fixed-dim/30 w-full"></div>
+<ul class="space-y-4">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-sm text-tertiary mt-0.5" data-icon="check" style="font-variation-settings: 'FILL' 1;">check</span>
+<span class="text-sm font-body text-on-surface font-semibold">Unlimited Access Library</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-sm text-tertiary mt-0.5" data-icon="check" style="font-variation-settings: 'FILL' 1;">check</span>
+<span class="text-sm font-body text-on-surface font-semibold">Priority Session Booking</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-sm text-tertiary mt-0.5" data-icon="check" style="font-variation-settings: 'FILL' 1;">check</span>
+<span class="text-sm font-body text-on-surface font-semibold">Direct Practitioner Chat</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-sm text-tertiary mt-0.5" data-icon="check" style="font-variation-settings: 'FILL' 1;">check</span>
+<span class="text-sm font-body text-on-surface font-semibold">Bi-weekly 1:1 Check-ins</span>
+</li>
+</ul>
+</div>
+<div class="mt-12">
+<a class="block w-full bg-primary text-on-primary py-5 text-center text-xs uppercase tracking-widest font-bold hover:bg-primary-container transition-all active:scale-95 duration-200" href="https://withme.com">
+                        Get Access
+                    </a>
+</div>
+</div>
+<!-- Tier: VIP (Dark) -->
+<div class="bg-primary p-8 flex flex-col h-full border border-transparent">
+<div class="mb-8">
+<span class="font-label uppercase tracking-widest text-[10px] font-bold text-on-primary-container">Ultimate Experience</span>
+<h2 class="font-serif text-3xl text-on-primary mt-2">VIP</h2>
+<p class="text-on-primary-container mt-2 text-sm">Bespoke mentorship and private retreats.</p>
+</div>
+<div class="flex-grow space-y-6">
+<div class="h-px bg-on-primary-container/20 w-full"></div>
+<ul class="space-y-4">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-sm text-tertiary-fixed-dim mt-0.5" data-icon="check" style="font-variation-settings: 'FILL' 1;">check</span>
+<span class="text-sm font-body text-on-primary">Everything in Companion</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-sm text-tertiary-fixed-dim mt-0.5" data-icon="check" style="font-variation-settings: 'FILL' 1;">check</span>
+<span class="text-sm font-body text-on-primary">Dedicated Concierge</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-sm text-tertiary-fixed-dim mt-0.5" data-icon="check" style="font-variation-settings: 'FILL' 1;">check</span>
+<span class="text-sm font-body text-on-primary">24/7 Priority Emergency Line</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-sm text-tertiary-fixed-dim mt-0.5" data-icon="check" style="font-variation-settings: 'FILL' 1;">check</span>
+<span class="text-sm font-body text-on-primary">Annual Executive Retreat</span>
+</li>
+</ul>
+</div>
+<div class="mt-12">
+<a class="block w-full border border-tertiary-fixed-dim text-tertiary-fixed-dim py-5 text-center text-xs uppercase tracking-widest font-bold hover:bg-tertiary-fixed-dim hover:text-primary transition-all active:scale-95 duration-200" href="https://calendly.com">
+                        Apply Now
+                    </a>
+</div>
+</div>
+</div>
+<!-- Descriptive Quote / Brand Moment -->
+<section class="mt-24 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div class="aspect-[4/5] overflow-hidden">
+<img class="w-full h-full object-cover filter grayscale hover:grayscale-0 transition-all duration-700" data-alt="Calm minimal interior with natural morning light streaming through a window onto a single wooden stool and ceramic vase" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDa9X42IT9oT6gfQJ0TBy-EC-7tBOeibvykwgdYmaUN2Abn9AIcUUcZL-MkeQTNV5Yxwc6aDD6GuscChnCGbfQF-i4fUQ8l9NUGedy2-WLRQ_iJ4l5Zm1dU00QfQOuduP8PdjTjx4h_oAQ1ib6FNpdeTIsmFL8PaX8ljcL_LLTM6fRHvcKjssm6UVzi9EQMZ_dLuxf1Fhp2BbggtKydkQj3hHOTwvzJVoElHEnq3lC8YCnOzXk1L7cbc5c4XxBkCZztrkYFYqXJT3Y"/>
+</div>
+<div class="space-y-8">
+<blockquote class="font-serif text-3xl md:text-4xl leading-tight text-primary italic">
+                    "True growth isn't about adding more, but about removing the noise until only the essence remains."
+                </blockquote>
+<div class="space-y-2">
+<p class="font-label uppercase tracking-widest text-xs font-extrabold text-tertiary">Our Philosophy</p>
+<p class="text-secondary leading-relaxed font-body">
+                        The YouX Companion is designed to be an invisible guide, providing depth when needed and space when you need to breathe. Every tier upgrade directly supports our mindful content creators and specialized practitioners.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Guarantee Section -->
+<section class="mt-24 border-t border-on-surface-variant/10 pt-16">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="space-y-4">
+<span class="material-symbols-outlined text-tertiary text-3xl" data-icon="verified_user">verified_user</span>
+<h3 class="font-serif text-xl text-primary">Private by Design</h3>
+<p class="text-sm text-secondary font-body leading-relaxed">Your journey is yours alone. We employ end-to-end encryption for all sessions and journal entries.</p>
+</div>
+<div class="space-y-4">
+<span class="material-symbols-outlined text-tertiary text-3xl" data-icon="history_edu">history_edu</span>
+<h3 class="font-serif text-xl text-primary">Cancel Anytime</h3>
+<p class="text-sm text-secondary font-body leading-relaxed">No long-term contracts or hidden fees. Adjust your tier whenever your practice needs change.</p>
+</div>
+<div class="space-y-4">
+<span class="material-symbols-outlined text-tertiary text-3xl" data-icon="auto_awesome">auto_awesome</span>
+<h3 class="font-serif text-xl text-primary">Modern Concierge</h3>
+<p class="text-sm text-secondary font-body leading-relaxed">Human-led support. No automated bots. Real practitioners ready to assist your growth.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Space -->
+<footer class="py-12 text-center">
+<p class="text-[10px] font-label uppercase tracking-widest text-secondary/40">© 2024 YouX Companion Systems. All rights reserved.</p>
+</footer>
+</body></html>

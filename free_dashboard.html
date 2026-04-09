@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed-dim": "#b6c9d5",
+                        "tertiary-fixed-dim": "#e8c082",
+                        "secondary-fixed": "#d2e5f3",
+                        "on-error": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-background": "#1b1c1a",
+                        "on-primary-fixed-variant": "#374953",
+                        "secondary-container": "#cfe2f0",
+                        "tertiary-fixed": "#ffdeac",
+                        "on-secondary-container": "#536571",
+                        "surface-dim": "#dbdad7",
+                        "on-tertiary-container": "#c5a065",
+                        "on-tertiary": "#ffffff",
+                        "tertiary": "#352200",
+                        "secondary": "#4e616d",
+                        "surface-container-low": "#f5f3f0",
+                        "surface-container": "#efeeeb",
+                        "on-primary": "#ffffff",
+                        "inverse-on-surface": "#f2f0ed",
+                        "background": "#fbf9f6",
+                        "inverse-surface": "#30312f",
+                        "on-tertiary-fixed": "#281900",
+                        "on-secondary-fixed": "#0a1e28",
+                        "inverse-primary": "#b6c9d5",
+                        "on-secondary-fixed-variant": "#374954",
+                        "outline-variant": "#c3c7ca",
+                        "on-surface-variant": "#43474a",
+                        "on-primary-fixed": "#0b1e26",
+                        "surface": "#fbf9f6",
+                        "surface-variant": "#e4e2df",
+                        "on-secondary": "#ffffff",
+                        "on-primary-container": "#96a9b4",
+                        "surface-tint": "#4f616b",
+                        "secondary-fixed-dim": "#b6c9d7",
+                        "outline": "#73787b",
+                        "error": "#ba1a1a",
+                        "surface-container-high": "#eae8e5",
+                        "primary-fixed": "#d2e5f1",
+                        "on-tertiary-fixed-variant": "#5d420f",
+                        "on-surface": "#1b1c1a",
+                        "tertiary-container": "#503704",
+                        "primary-container": "#2c3e47",
+                        "error-container": "#ffdad6",
+                        "surface-bright": "#fbf9f6",
+                        "primary": "#162831",
+                        "surface-container-highest": "#e4e2df",
+                        "on-error-container": "#93000a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Manrope', sans-serif; }
+        h1, h2, h3 { font-family: 'Noto Serif', serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="flex justify-between items-center px-6 py-4 w-full sticky top-0 z-50 bg-[#fbf9f6] dark:bg-[#162831]">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[#162831] dark:text-[#fbf9f6]" data-icon="spa">spa</span>
+<span class="text-xl font-serif font-bold tracking-widest text-[#162831] dark:text-[#fbf9f6]">YOUX</span>
+</div>
+<button class="hover:opacity-80 transition-opacity">
+<span class="material-symbols-outlined text-primary" data-icon="account_circle">account_circle</span>
+</button>
+</header>
+<main class="px-6 max-w-2xl mx-auto space-y-8 mt-4">
+<!-- Greeting Banner -->
+<section class="bg-surface-container-low p-8 rounded-lg relative overflow-hidden">
+<div class="relative z-10">
+<p class="text-secondary font-label text-[10px] tracking-[0.2em] font-bold uppercase mb-2">Daily Sanctuary</p>
+<h1 class="text-3xl md:text-4xl text-primary font-bold tracking-tight mb-3">Good Morning, Julian</h1>
+<p class="text-on-surface-variant font-body leading-relaxed max-w-xs italic opacity-80">"The secret of change is to focus all of your energy, not on fighting the old, but on building the new."</p>
+</div>
+<div class="absolute -right-8 -bottom-8 opacity-10">
+<span class="material-symbols-outlined text-[160px]" data-icon="light_mode">light_mode</span>
+</div>
+</section>
+<!-- Upsell Card -->
+<section class="border-[1.5px] border-tertiary-fixed-dim bg-surface-container-lowest p-6 rounded-lg flex flex-col md:flex-row justify-between items-start md:items-center gap-6 shadow-[0px_12px_32px_rgba(139,158,171,0.08)]">
+<div class="space-y-2">
+<h2 class="text-xl font-bold text-primary">Unlock the full experience</h2>
+<p class="text-sm text-secondary leading-snug max-w-sm">Gain access to 1-on-1 coaching sessions, personalized meditation journeys, and your full historical insight reports.</p>
+</div>
+<button class="bg-primary text-on-primary px-6 py-3 font-label text-xs font-bold tracking-widest uppercase transition-all duration-200 hover:opacity-90 active:scale-95 whitespace-nowrap">
+                Get Access
+            </button>
+</section>
+<!-- Tools Grid (2x2) -->
+<section class="space-y-4">
+<h3 class="text-xs font-label tracking-[0.15em] font-extrabold text-primary uppercase">Free Tool Suite</h3>
+<div class="grid grid-cols-2 gap-4">
+<!-- Tool 1 -->
+<div class="bg-surface-container-low p-6 rounded-lg group hover:bg-surface-container transition-colors cursor-pointer h-44 flex flex-col justify-between">
+<span class="material-symbols-outlined text-tertiary text-3xl" data-icon="air">air</span>
+<div class="space-y-1">
+<p class="font-bold text-primary tracking-tight">Breathwork</p>
+<p class="text-[10px] text-secondary-fixed-variant uppercase tracking-widest font-bold">5 Min Session</p>
+</div>
+</div>
+<!-- Tool 2 -->
+<div class="bg-surface-container-low p-6 rounded-lg group hover:bg-surface-container transition-colors cursor-pointer h-44 flex flex-col justify-between">
+<span class="material-symbols-outlined text-tertiary text-3xl" data-icon="edit_note">edit_note</span>
+<div class="space-y-1">
+<p class="font-bold text-primary tracking-tight">Journaling</p>
+<p class="text-[10px] text-secondary-fixed-variant uppercase tracking-widest font-bold">Daily Prompts</p>
+</div>
+</div>
+<!-- Tool 3 -->
+<div class="bg-surface-container-low p-6 rounded-lg group hover:bg-surface-container transition-colors cursor-pointer h-44 flex flex-col justify-between">
+<span class="material-symbols-outlined text-tertiary text-3xl" data-icon="favorite">favorite</span>
+<div class="space-y-1">
+<p class="font-bold text-primary tracking-tight">Affirmations</p>
+<p class="text-[10px] text-secondary-fixed-variant uppercase tracking-widest font-bold">Positive Mindset</p>
+</div>
+</div>
+<!-- Tool 4 -->
+<div class="bg-surface-container-low p-6 rounded-lg group hover:bg-surface-container transition-colors cursor-pointer h-44 flex flex-col justify-between">
+<span class="material-symbols-outlined text-tertiary text-3xl" data-icon="data_usage">data_usage</span>
+<div class="space-y-1">
+<p class="font-bold text-primary tracking-tight">Life Wheel</p>
+<p class="text-[10px] text-secondary-fixed-variant uppercase tracking-widest font-bold">Balance Check</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Community Feed Preview (Locked) -->
+<section class="space-y-4">
+<h3 class="text-xs font-label tracking-[0.15em] font-extrabold text-primary uppercase">Community Insights</h3>
+<div class="relative rounded-lg overflow-hidden">
+<div class="space-y-4 filter blur-[2px] opacity-40">
+<div class="bg-surface-container-low p-5 rounded-lg border-l-4 border-tertiary-fixed-dim">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-8 h-8 rounded-full bg-outline-variant"></div>
+<div class="h-3 w-24 bg-outline-variant rounded"></div>
+</div>
+<div class="h-2 w-full bg-outline-variant rounded mb-2"></div>
+<div class="h-2 w-3/4 bg-outline-variant rounded"></div>
+</div>
+<div class="bg-surface-container-low p-5 rounded-lg border-l-4 border-tertiary-fixed-dim">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-8 h-8 rounded-full bg-outline-variant"></div>
+<div class="h-3 w-24 bg-outline-variant rounded"></div>
+</div>
+<div class="h-2 w-full bg-outline-variant rounded mb-2"></div>
+<div class="h-2 w-1/2 bg-outline-variant rounded"></div>
+</div>
+</div>
+<!-- Lock Overlay -->
+<div class="absolute inset-0 flex flex-col items-center justify-center bg-surface/40 backdrop-blur-[1px] p-6 text-center">
+<span class="material-symbols-outlined text-tertiary text-3xl mb-4" data-icon="lock">lock</span>
+<p class="text-primary font-bold mb-1">Join the conversation — upgrade</p>
+<p class="text-secondary text-sm mb-6 max-w-[200px]">Unlock member-only discussions and expert circles.</p>
+<button class="text-tertiary font-label text-[10px] font-extrabold tracking-widest uppercase flex items-center gap-2">
+                        View Membership Plans
+                        <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 bg-white dark:bg-[#162831] shadow-[0px_-12px_32px_rgba(139,158,171,0.12)]">
+<!-- Active: Home -->
+<a class="flex flex-col items-center justify-center text-[#352200] dark:text-[#e8c082] border-t-2 border-[#352200] pt-2 transition-all duration-300 ease-in-out" href="#">
+<span class="material-symbols-outlined" data-icon="home" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-sans text-[10px] tracking-[0.1em] font-bold uppercase mt-1">HOME</span>
+</a>
+<!-- Muted: Sessions -->
+<div class="flex flex-col items-center justify-center text-[#8B9EAB] pt-2 opacity-50 cursor-not-allowed">
+<span class="material-symbols-outlined" data-icon="event_note">event_note</span>
+<div class="flex items-center gap-1 mt-1">
+<span class="font-sans text-[10px] tracking-[0.1em] font-bold uppercase">SESSIONS</span>
+<span class="material-symbols-outlined text-[8px]" data-icon="lock">lock</span>
+</div>
+</div>
+<!-- Inactive: Practice -->
+<a class="flex flex-col items-center justify-center text-[#8B9EAB] pt-2 hover:text-[#162831] dark:hover:text-white transition-all duration-300 ease-in-out" href="#">
+<span class="material-symbols-outlined" data-icon="self_improvement">self_improvement</span>
+<span class="font-sans text-[10px] tracking-[0.1em] font-bold uppercase mt-1">PRACTICE</span>
+</a>
+<!-- Muted: Messages -->
+<div class="flex flex-col items-center justify-center text-[#8B9EAB] pt-2 opacity-50 cursor-not-allowed">
+<span class="material-symbols-outlined" data-icon="chat_bubble">chat_bubble</span>
+<div class="flex items-center gap-1 mt-1">
+<span class="font-sans text-[10px] tracking-[0.1em] font-bold uppercase">MESSAGES</span>
+<span class="material-symbols-outlined text-[8px]" data-icon="lock">lock</span>
+</div>
+</div>
+</nav>
+</body></html>

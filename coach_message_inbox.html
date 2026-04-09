@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Coach Message Inbox</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-variant": "#e4e2df",
+                    "on-surface-variant": "#43474a",
+                    "primary-fixed": "#d2e5f1",
+                    "surface-tint": "#4f616b",
+                    "on-primary-container": "#96a9b4",
+                    "primary-fixed-dim": "#b6c9d5",
+                    "primary": "#162831",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-high": "#eae8e5",
+                    "outline-variant": "#c3c7ca",
+                    "inverse-on-surface": "#f2f0ed",
+                    "on-secondary-fixed": "#0a1e28",
+                    "inverse-primary": "#b6c9d5",
+                    "on-error-container": "#93000a",
+                    "inverse-surface": "#30312f",
+                    "on-secondary-container": "#536571",
+                    "on-secondary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "secondary": "#4e616d",
+                    "tertiary": "#352200",
+                    "on-tertiary-container": "#c5a065",
+                    "tertiary-container": "#503704",
+                    "background": "#fbf9f6",
+                    "surface-container-highest": "#e4e2df",
+                    "secondary-fixed": "#d2e5f3",
+                    "primary-container": "#2c3e47",
+                    "surface-bright": "#fbf9f6",
+                    "surface": "#fbf9f6",
+                    "on-background": "#1b1c1a",
+                    "tertiary-fixed": "#ffdeac",
+                    "tertiary-fixed-dim": "#e8c082",
+                    "on-primary": "#ffffff",
+                    "surface-container": "#efeeeb",
+                    "outline": "#73787b",
+                    "secondary-fixed-dim": "#b6c9d7",
+                    "on-surface": "#1b1c1a",
+                    "on-secondary-fixed-variant": "#374954",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-fixed": "#0b1e26",
+                    "surface-container-low": "#f5f3f0",
+                    "on-error": "#ffffff",
+                    "on-tertiary-fixed": "#281900",
+                    "secondary-container": "#cfe2f0",
+                    "on-tertiary-fixed-variant": "#5d420f",
+                    "error": "#ba1a1a",
+                    "on-primary-fixed-variant": "#374953",
+                    "surface-dim": "#dbdad7"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; background-color: #fbf9f6; }
+        .serif { font-family: 'Noto Serif', serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .unread-dot { width: 8px; height: 8px; border-radius: 50%; }
+        .glass-effect { backdrop-filter: blur(8px); background: rgba(255, 255, 255, 0.8); }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-primary antialiased">
+<header class="sticky top-0 z-40 bg-[#fbf9f6] dark:bg-slate-950 flex justify-between items-center w-full px-6 py-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#162831] dark:text-slate-100" data-icon="spa">spa</span>
+<h1 class="font-serif tracking-tighter text-2xl text-[#162831] dark:text-slate-100">YouX Companion</h1>
+</div>
+<div class="relative w-10 h-10 overflow-hidden bg-surface-container rounded-lg">
+<img alt="Coach Profile" class="w-full h-full object-cover" data-alt="Close-up portrait of a professional coach with a warm smile in a brightly lit modern office setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbuv61jIoaa-OUWwzZTs86dFx7R_BYgzOaYHvfsohrqLtA6mfto_vaz6gLS3iysdN-k2yLyf7rPt6VfwfOSiQ3Fcjp79-7FWtQMmjlnkKZxEqawlI8iZXcTu_KhzE7ZkwpmWE2sax4-Y78-UPVrsSzNjp61zp34fEiRLBmXHfUxVAuFwc24FpgxxDb73YgjJYwRh8lhXJuSX63PAaXH_bo-FrTkYrfBC8OVm9HG201_6sJHfDGnhx_F6Wnq5sJux6WZV3yB0PJ-ro"/>
+</div>
+</header>
+<main class="max-w-2xl mx-auto px-6 py-8 pb-32">
+<div class="flex items-baseline justify-between mb-10">
+<div class="flex items-center gap-4">
+<h2 class="serif text-4xl font-bold tracking-tight">Messages</h2>
+<span class="bg-tertiary text-on-tertiary px-2.5 py-0.5 text-xs font-bold rounded-full">3</span>
+</div>
+<button class="text-tertiary font-label font-bold text-[11px] tracking-[0.15em] uppercase hover:opacity-80 transition-opacity">
+                Mark All Read
+            </button>
+</div>
+<section class="space-y-4">
+<div class="group relative bg-surface-container-lowest p-6 transition-all active:scale-[0.98] duration-200 cursor-pointer">
+<div class="flex items-start gap-5">
+<div class="relative flex-shrink-0">
+<div class="w-14 h-14 bg-surface-container-high flex items-center justify-center font-serif text-lg font-bold text-primary">
+                            AJ
+                        </div>
+<div class="absolute -top-1 -right-1 unread-dot bg-tertiary"></div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex justify-between items-center mb-1">
+<div class="flex items-center gap-2">
+<h3 class="font-bold text-primary truncate">Alexander J.</h3>
+<span class="text-[9px] font-label font-extrabold tracking-widest uppercase bg-primary text-on-primary px-1.5 py-0.5">VIP</span>
+</div>
+<span class="text-[11px] text-secondary/60 font-medium">10:42 AM</span>
+</div>
+<p class="text-sm text-primary font-semibold truncate mb-1">Looking forward to our session tomorrow. I've finished the prep work.</p>
+<p class="text-xs text-secondary/70">Client is active in "Deep Focus" program</p>
+</div>
+</div>
+</div>
+<div class="group relative bg-surface-container-lowest p-6 transition-all active:scale-[0.98] duration-200 cursor-pointer">
+<div class="flex items-start gap-5">
+<div class="relative flex-shrink-0">
+<div class="w-14 h-14 bg-surface-container-high flex items-center justify-center font-serif text-lg font-bold text-primary">
+                            SM
+                        </div>
+<div class="absolute -top-1 -right-1 unread-dot bg-tertiary"></div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex justify-between items-center mb-1">
+<div class="flex items-center gap-2">
+<h3 class="font-bold text-primary truncate">Sarah M.</h3>
+<span class="text-[9px] font-label font-extrabold tracking-widest uppercase border border-outline-variant text-secondary px-1.5 py-0.5">Companion</span>
+</div>
+<span class="text-[11px] text-secondary/60 font-medium">09:15 AM</span>
+</div>
+<p class="text-sm text-primary font-semibold truncate mb-1">The mindfulness exercises are really helping with my morning routine.</p>
+<p class="text-xs text-secondary/70">Responded to your "Weekly Pulse" prompt</p>
+</div>
+</div>
+</div>
+<div class="group relative bg-surface-container-low/40 p-6 transition-all active:scale-[0.98] duration-200 cursor-pointer">
+<div class="flex items-start gap-5">
+<div class="relative flex-shrink-0">
+<div class="w-14 h-14 bg-surface-container-high flex items-center justify-center font-serif text-lg font-bold text-primary">
+                            DL
+                        </div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex justify-between items-center mb-1">
+<div class="flex items-center gap-2">
+<h3 class="font-bold text-primary truncate">David L.</h3>
+<span class="text-[9px] font-label font-extrabold tracking-widest uppercase bg-primary text-on-primary px-1.5 py-0.5">VIP</span>
+</div>
+<span class="text-[11px] text-secondary/60 font-medium">Yesterday</span>
+</div>
+<p class="text-sm text-secondary truncate mb-1">I've uploaded the progress photos. Let me know what you think.</p>
+<p class="text-xs text-secondary/70">Awaiting your review on Milestone 4</p>
+</div>
+</div>
+</div>
+<div class="group relative bg-surface-container-lowest p-6 transition-all active:scale-[0.98] duration-200 cursor-pointer">
+<div class="flex items-start gap-5">
+<div class="relative flex-shrink-0">
+<div class="w-14 h-14 bg-surface-container-high flex items-center justify-center font-serif text-lg font-bold text-primary">
+                            ET
+                        </div>
+<div class="absolute -top-1 -right-1 unread-dot bg-tertiary"></div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex justify-between items-center mb-1">
+<div class="flex items-center gap-2">
+<h3 class="font-bold text-primary truncate">Elena T.</h3>
+<span class="text-[9px] font-label font-extrabold tracking-widest uppercase border border-outline-variant text-secondary px-1.5 py-0.5">Companion</span>
+</div>
+<span class="text-[11px] text-secondary/60 font-medium">Yesterday</span>
+</div>
+<p class="text-sm text-primary font-semibold truncate mb-1">Quick question about the nutritional balance on rest days.</p>
+<p class="text-xs text-secondary/70">Sent 3 attachments</p>
+</div>
+</div>
+</div>
+<div class="group relative bg-surface-container-low/40 p-6 transition-all active:scale-[0.98] duration-200 cursor-pointer">
+<div class="flex items-start gap-5">
+<div class="relative flex-shrink-0">
+<div class="w-14 h-14 bg-surface-container-high flex items-center justify-center font-serif text-lg font-bold text-primary">
+                            RK
+                        </div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex justify-between items-center mb-1">
+<div class="flex items-center gap-2">
+<h3 class="font-bold text-primary truncate">Robert K.</h3>
+<span class="text-[9px] font-label font-extrabold tracking-widest uppercase border border-outline-variant text-secondary px-1.5 py-0.5">Companion</span>
+</div>
+<span class="text-[11px] text-secondary/60 font-medium">Oct 12</span>
+</div>
+<p class="text-sm text-secondary truncate mb-1">Thanks for the feedback. I'll adjust the intensity for next week.</p>
+<p class="text-xs text-secondary/70">Conversation closed</p>
+</div>
+</div>
+</div>
+</section>
+<div class="mt-12 mb-8 bg-surface-container-low p-8 text-center border-t border-outline-variant/10">
+<span class="material-symbols-outlined text-tertiary mb-3 text-3xl" data-icon="auto_awesome">auto_awesome</span>
+<p class="text-sm text-secondary serif italic mb-2">You're maintaining a 100% response rate this week.</p>
+<p class="font-label text-[10px] uppercase tracking-widest text-primary font-bold">Keep it up, Coach.</p>
+</div>
+</main>
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center pb-safe pt-2 px-4 bg-[#ffffff] dark:bg-slate-900 shadow-[0px_-4px_12px_rgba(139,158,171,0.08)] z-50 border-t border-[#8B9EAB]/20">
+<div class="flex flex-col items-center justify-center text-[#8B9EAB] dark:text-slate-500 hover:text-[#162831] dark:hover:text-white transition-opacity duration-300 ease-out">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-sans uppercase tracking-widest text-[10px] font-semibold">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#8B9EAB] dark:text-slate-500 hover:text-[#162831] dark:hover:text-white transition-opacity duration-300 ease-out">
+<span class="material-symbols-outlined" data-icon="event_seat">event_seat</span>
+<span class="font-sans uppercase tracking-widest text-[10px] font-semibold">Sessions</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#8B9EAB] dark:text-slate-500 hover:text-[#162831] dark:hover:text-white transition-opacity duration-300 ease-out">
+<span class="material-symbols-outlined" data-icon="self_improvement">self_improvement</span>
+<span class="font-sans uppercase tracking-widest text-[10px] font-semibold">Practice</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#352200] dark:text-[#e8c082] scale-110 transition-opacity duration-300 ease-out">
+<span class="material-symbols-outlined" data-icon="chat_bubble" style="font-variation-settings: 'FILL' 1;">chat_bubble</span>
+<span class="font-sans uppercase tracking-widest text-[10px] font-semibold">Messages</span>
+</div>
+</nav>
+</body></html>

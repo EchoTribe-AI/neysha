@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@300;400;600;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-fixed-dim": "#b6c9d5",
+                    "tertiary-fixed-dim": "#e8c082",
+                    "secondary-fixed": "#d2e5f3",
+                    "on-error": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-background": "#1b1c1a",
+                    "on-primary-fixed-variant": "#374953",
+                    "secondary-container": "#cfe2f0",
+                    "tertiary-fixed": "#ffdeac",
+                    "on-secondary-container": "#536571",
+                    "surface-dim": "#dbdad7",
+                    "on-tertiary-container": "#c5a065",
+                    "on-tertiary": "#ffffff",
+                    "tertiary": "#352200",
+                    "secondary": "#4e616d",
+                    "surface-container-low": "#f5f3f0",
+                    "surface-container": "#efeeeb",
+                    "on-primary": "#ffffff",
+                    "inverse-on-surface": "#f2f0ed",
+                    "background": "#fbf9f6",
+                    "inverse-surface": "#30312f",
+                    "on-tertiary-fixed": "#281900",
+                    "on-secondary-fixed": "#0a1e28",
+                    "inverse-primary": "#b6c9d5",
+                    "on-secondary-fixed-variant": "#374954",
+                    "outline-variant": "#c3c7ca",
+                    "on-surface-variant": "#43474a",
+                    "on-primary-fixed": "#0b1e26",
+                    "surface": "#fbf9f6",
+                    "surface-variant": "#e4e2df",
+                    "on-secondary": "#ffffff",
+                    "on-primary-container": "#96a9b4",
+                    "surface-tint": "#4f616b",
+                    "secondary-fixed-dim": "#b6c9d7",
+                    "outline": "#73787b",
+                    "error": "#ba1a1a",
+                    "surface-container-high": "#eae8e5",
+                    "primary-fixed": "#d2e5f1",
+                    "on-tertiary-fixed-variant": "#5d420f",
+                    "on-surface": "#1b1c1a",
+                    "tertiary-container": "#503704",
+                    "primary-container": "#2c3e47",
+                    "error-container": "#ffdad6",
+                    "surface-bright": "#fbf9f6",
+                    "primary": "#162831",
+                    "surface-container-highest": "#e4e2df",
+                    "on-error-container": "#93000a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": [
+                            "Noto Serif"
+                    ],
+                    "body": [
+                            "Manrope"
+                    ],
+                    "label": [
+                            "Manrope"
+                    ]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Manrope', sans-serif; }
+        h1, h2, h3 { font-family: 'Noto Serif', serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface min-h-screen pb-24">
+<!-- TopAppBar -->
+<header class="bg-[#fbf9f6] dark:bg-[#162831] flex justify-between items-center px-6 py-4 w-full sticky top-0 z-50">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[#162831] dark:text-[#fbf9f6]" data-icon="spa">spa</span>
+<span class="font-serif tracking-widest uppercase text-xl font-bold text-[#162831] dark:text-[#fbf9f6]">YOUX</span>
+</div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="font-sans text-[10px] tracking-[0.1em] font-bold uppercase text-[#8B9EAB] hover:opacity-80 transition-opacity" href="#">HOME</a>
+<a class="font-sans text-[10px] tracking-[0.1em] font-bold uppercase text-[#8B9EAB] hover:opacity-80 transition-opacity" href="#">SESSIONS</a>
+<a class="font-sans text-[10px] tracking-[0.1em] font-bold uppercase text-[#352200] dark:text-[#e8c082] hover:opacity-80 transition-opacity" href="#">PRACTICE</a>
+<a class="font-sans text-[10px] tracking-[0.1em] font-bold uppercase text-[#8B9EAB] hover:opacity-80 transition-opacity" href="#">MESSAGES</a>
+</nav>
+<div class="md:hidden">
+<span class="material-symbols-outlined text-[#162831] dark:text-[#fbf9f6]" data-icon="menu">menu</span>
+</div>
+</header>
+<main class="max-w-5xl mx-auto px-6 pt-8">
+<!-- Hero Header -->
+<header class="mb-12">
+<p class="font-label text-[10px] tracking-[0.2em] uppercase text-secondary mb-2">Exclusive Access</p>
+<h1 class="text-4xl md:text-5xl font-bold tracking-tight text-primary leading-tight mb-6">Resource Library</h1>
+<!-- Member Banner -->
+<div class="bg-tertiary-fixed text-on-tertiary-fixed p-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-2xl" data-icon="stars" style="font-variation-settings: 'FILL' 1;">stars</span>
+<p class="font-body font-medium leading-relaxed">You X Companion members get the full library + AI access.</p>
+</div>
+<button class="bg-primary text-on-primary px-6 py-3 font-label text-[10px] tracking-[0.15em] font-bold uppercase hover:opacity-90 transition-opacity self-start md:self-auto">
+                    UPGRADE NOW
+                </button>
+</div>
+</header>
+<!-- Categories Filters (UI Polish) -->
+<div class="flex gap-4 overflow-x-auto pb-8 no-scrollbar">
+<button class="px-5 py-2 bg-primary text-on-primary font-label text-[10px] tracking-widest uppercase shrink-0">ALL</button>
+<button class="px-5 py-2 bg-surface-container-low text-secondary font-label text-[10px] tracking-widest uppercase shrink-0">BREATHWORK</button>
+<button class="px-5 py-2 bg-surface-container-low text-secondary font-label text-[10px] tracking-widest uppercase shrink-0">JOURNALING</button>
+<button class="px-5 py-2 bg-surface-container-low text-secondary font-label text-[10px] tracking-widest uppercase shrink-0">MINDSET</button>
+<button class="px-5 py-2 bg-surface-container-low text-secondary font-label text-[10px] tracking-widest uppercase shrink-0">WELL-BEING</button>
+</div>
+<!-- Resource Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
+<!-- Card 1: Breathwork (Free) -->
+<div class="bg-surface-container-lowest p-8 flex flex-col h-full group hover:shadow-[0px_12px_32px_rgba(139,158,171,0.12)] transition-shadow">
+<div class="mb-8 overflow-hidden aspect-[16/9] bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Minimalist abstract visual representing deep breathing with soft blue and white circular waves in a calm atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAS23UPZRNXrcCMlTdkXmPmmz5pWvjX6F5iazduiY88o_OAyVV7oiUKHBGVriQ8yoOVq1FQvng4xsvZmE3fPR7sNGyclw9HPwD--CXHEw4eI6EgZZSpSNB0mHf5Y8T4DcMAtLG2mWYPRrylk7yvL0_82ycPE7b77tlSF8q-upDn6fckLxBhtOlpBs-wDjeuhw0lVLP1gOk9rQoJPp0ckWx1UznkEHH4BAh-j5zjho54dtmylve4OpSzNAEPNWgAA3kRs_-Lgq2RbCk"/>
+</div>
+<div class="flex justify-between items-start mb-4">
+<span class="font-label text-[10px] tracking-widest text-secondary uppercase">Breathwork</span>
+<span class="font-label text-[10px] tracking-widest text-tertiary uppercase font-bold">Free</span>
+</div>
+<h3 class="text-2xl font-bold text-primary mb-4">4-7-8 Morning Ritual</h3>
+<p class="text-secondary font-body leading-relaxed mb-8 flex-grow">A 10-minute rhythmic breathing guide designed to oxygenate the body and sharpen cognitive focus for the day ahead.</p>
+<button class="w-full py-4 border border-outline-variant text-primary font-label text-[10px] tracking-[0.2em] font-extrabold uppercase hover:bg-surface-container-low transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="download">download</span>
+                    Download
+                </button>
+</div>
+<!-- Card 2: Journaling (Locked) -->
+<div class="bg-surface-container-lowest p-8 flex flex-col h-full relative group">
+<div class="absolute top-4 right-4 z-10 bg-tertiary-fixed px-3 py-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-tertiary" data-icon="lock" style="font-variation-settings: 'FILL' 1;">lock</span>
+<span class="font-label text-[9px] tracking-widest text-tertiary font-bold uppercase">Companion only</span>
+</div>
+<div class="mb-8 overflow-hidden aspect-[16/9] bg-surface-container grayscale opacity-80">
+<img class="w-full h-full object-cover" data-alt="High-end stationery and fountain pen on a clean linen surface with soft afternoon sunlight and shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOp2Ggo8ABs3ZNltOQ-aVRfzm-bymJci4LeUQje67cpehKTm5v1znmcSC4-wj7MvdGriK49z-1-XzDP1McFImHnBjvdiEAgZkTiakB-YWfMH4DppBkhHyFCXRNud0eH5YuhkUDXI-ImknMS0y_-ZmBt3Wjn7y36BFVMgAja90g2G92LojhYiRn7W2q8uLf-2WJXxkJI1sgno0NnHiSpMyvo2rBTdvmlvFgQnBznIaPiYDUTLfC_VdPts7idi89ex6K3COtDCOkE2A"/>
+</div>
+<div class="flex justify-between items-start mb-4">
+<span class="font-label text-[10px] tracking-widest text-secondary uppercase">Journaling</span>
+</div>
+<h3 class="text-2xl font-bold text-primary mb-4">Shadow Work Workbook</h3>
+<p class="text-secondary font-body leading-relaxed mb-8 flex-grow">Advanced prompts for deep introspection and processing subconscious patterns. Includes 30 days of structured inquiry.</p>
+<button class="w-full py-4 bg-surface-container text-outline font-label text-[10px] tracking-[0.2em] font-extrabold uppercase cursor-not-allowed flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="lock">lock</span>
+                    Locked
+                </button>
+</div>
+<!-- Card 3: Mindset (Free) -->
+<div class="bg-surface-container-lowest p-8 flex flex-col h-full group hover:shadow-[0px_12px_32px_rgba(139,158,171,0.12)] transition-shadow">
+<div class="mb-8 overflow-hidden aspect-[16/9] bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Elegant stone sculpture or balanced rocks in a minimalist zen garden setting with soft directional lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDU_Nqy-DPbAXQSXhFMB4dY5U2eyIRcUhIhvXSHP0AsRF-BcbhGveNfzu8h04h8vIh4tc3RCYkUyS8eon_jl-9ny-YLYmrXWBhxhOawwr1q6a6tWddoqRuhaoPsx6603EPS8OFp8MJMkzZUMPsYZD4P4e9gVOGnvwNim4T-USNALC0kKrc7IBHBM7kT2N4SOYW61Rb1JxJEbdu2NY6Z_2RMoqmzTk449ZCtOY-RV6XOCaGUNP-jI1FwcrZcbKjvyqN92rac9Q-1Wrk"/>
+</div>
+<div class="flex justify-between items-start mb-4">
+<span class="font-label text-[10px] tracking-widest text-secondary uppercase">Mindset</span>
+<span class="font-label text-[10px] tracking-widest text-tertiary uppercase font-bold">Free</span>
+</div>
+<h3 class="text-2xl font-bold text-primary mb-4">Stoic Stress Mastery</h3>
+<p class="text-secondary font-body leading-relaxed mb-8 flex-grow">A concise cheat sheet featuring 5 core Stoic principles to navigate high-pressure corporate environments with equanimity.</p>
+<button class="w-full py-4 border border-outline-variant text-primary font-label text-[10px] tracking-[0.2em] font-extrabold uppercase hover:bg-surface-container-low transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="download">download</span>
+                    Download
+                </button>
+</div>
+<!-- Card 4: Well-Being (Locked) -->
+<div class="bg-surface-container-lowest p-8 flex flex-col h-full relative group">
+<div class="absolute top-4 right-4 z-10 bg-tertiary-fixed px-3 py-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-tertiary" data-icon="lock" style="font-variation-settings: 'FILL' 1;">lock</span>
+<span class="font-label text-[9px] tracking-widest text-tertiary font-bold uppercase">Companion only</span>
+</div>
+<div class="mb-8 overflow-hidden aspect-[16/9] bg-surface-container grayscale opacity-80">
+<img class="w-full h-full object-cover" data-alt="Close-up of high-end organic skincare and essential oils on a marble slab with a fresh eucalyptus sprig" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOQK-udYkOisrz1jfT2_cnbsdwEhpV4kFfJzNAQNjhjReh3GycqYEvhfx9i8CrtWuZrTSQFqwHH9NPoU_DgGnE8IydVHD5QFtHzauh-KSDIFYN4rJ9A-bVEiYCqyKBHVk7ShHaGJco5JJc00MR93MYVCIRjqW4h2A143Ym73KvFreU4Lkpm3O6JlVtFFSFgTCSWC-9apxFNYYhhmzj7flKfYn6m7-vL7gVRIJpko9p3UmLAA5FpBHjrkPsmu2e95oKxeeQMdBALGY"/>
+</div>
+<div class="flex justify-between items-start mb-4">
+<span class="font-label text-[10px] tracking-widest text-secondary uppercase">Well-Being</span>
+</div>
+<h3 class="text-2xl font-bold text-primary mb-4">Bio-Optimization Guide</h3>
+<p class="text-secondary font-body leading-relaxed mb-8 flex-grow">Detailed protocols for sleep hygiene, light exposure, and nutrient timing to align with your natural circadian rhythm.</p>
+<button class="w-full py-4 bg-surface-container text-outline font-label text-[10px] tracking-[0.2em] font-extrabold uppercase cursor-not-allowed flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="lock">lock</span>
+                    Locked
+                </button>
+</div>
+<!-- Card 5: Breathwork (Locked) -->
+<div class="bg-surface-container-lowest p-8 flex flex-col h-full relative group">
+<div class="absolute top-4 right-4 z-10 bg-tertiary-fixed px-3 py-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-tertiary" data-icon="lock" style="font-variation-settings: 'FILL' 1;">lock</span>
+<span class="font-label text-[9px] tracking-widest text-tertiary font-bold uppercase">Companion only</span>
+</div>
+<div class="mb-8 overflow-hidden aspect-[16/9] bg-surface-container grayscale opacity-80">
+<img class="w-full h-full object-cover" data-alt="Foggy forest morning with ethereal light rays breaking through tall pine trees in a moody silent atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSyYEes--C4CQdVRLyaLUhcfcgkXd06msR3cptpJvowpkoT8rt6enjTSUO-DuA-dWE4M1WzFRt2tPZ797tf-vVpL-AYL1rwKGNPoiNUerqszkmLiNAOY6RYyeL0zWnk-181FxXhZZ9hUwXmYxRN08LO7H2IdkqabPDhpZxdpOxSJnqmcOQ4K08_cW_dNZUpGAoeqSBfabiBVOpfwZW5x4cDz1b3UQygn29glbznQY8wagk0FWMvF-Nnb0Vka7bDIMR04vbJ5ceWKg"/>
+</div>
+<div class="flex justify-between items-start mb-4">
+<span class="font-label text-[10px] tracking-widest text-secondary uppercase">Breathwork</span>
+</div>
+<h3 class="text-2xl font-bold text-primary mb-4">Holotropic Audio Journey</h3>
+<p class="text-secondary font-body leading-relaxed mb-8 flex-grow">A deep-dive 60-minute guided session using specialized music and breath patterns for altered states of awareness.</p>
+<button class="w-full py-4 bg-surface-container text-outline font-label text-[10px] tracking-[0.2em] font-extrabold uppercase cursor-not-allowed flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="lock">lock</span>
+                    Locked
+                </button>
+</div>
+<!-- Card 6: Mindset (Locked) -->
+<div class="bg-surface-container-lowest p-8 flex flex-col h-full relative group">
+<div class="absolute top-4 right-4 z-10 bg-tertiary-fixed px-3 py-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-tertiary" data-icon="lock" style="font-variation-settings: 'FILL' 1;">lock</span>
+<span class="font-label text-[9px] tracking-widest text-tertiary font-bold uppercase">Companion only</span>
+</div>
+<div class="mb-8 overflow-hidden aspect-[16/9] bg-surface-container grayscale opacity-80">
+<img class="w-full h-full object-cover" data-alt="Elegant architectural lines of a modern library with vast open spaces and soft natural light highlighting geometry" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5_noMpg3pCOTuH7Q6qj9wEtqc9eM55yzBjDHJGuIUqZG3x4EfF46pf34posXiIiE42azcJFyXCfFwEZF0QdLku1qU97RbqOGpfuZE2GyzyrcNv-yIYQOD5Uqc8PZDfX_hARsIcYEVXyOxWSwQUUoxZ2ggWm4NCjJdFwPE90PQ5TgNXzWJL3evdx5lS-R-DfRkj0tUO0sJSjZ2uaIVKbA0n6pM9msPcCww0sxHQnPfyjzT8pMj17_XTjIqXe3RUSZykbJKF1biaNI"/>
+</div>
+<div class="flex justify-between items-start mb-4">
+<span class="font-label text-[10px] tracking-widest text-secondary uppercase">Mindset</span>
+</div>
+<h3 class="text-2xl font-bold text-primary mb-4">Executive Presence Kit</h3>
+<p class="text-secondary font-body leading-relaxed mb-8 flex-grow">Masterclass on non-verbal communication, vocal tonality, and physiological state management for leaders.</p>
+<button class="w-full py-4 bg-surface-container text-outline font-label text-[10px] tracking-[0.2em] font-extrabold uppercase cursor-not-allowed flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="lock">lock</span>
+                    Locked
+                </button>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 bg-white dark:bg-[#162831] shadow-[0px_-12px_32px_rgba(139,158,171,0.12)] border-t-0 md:hidden">
+<div class="flex flex-col items-center justify-center text-[#8B9EAB] pt-2 transition-all duration-300 ease-in-out hover:text-[#162831]">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-sans text-[10px] tracking-[0.1em] font-bold uppercase">HOME</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#8B9EAB] pt-2 transition-all duration-300 ease-in-out hover:text-[#162831]">
+<span class="material-symbols-outlined" data-icon="event_note">event_note</span>
+<span class="font-sans text-[10px] tracking-[0.1em] font-bold uppercase">SESSIONS</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#352200] dark:text-[#e8c082] border-t-2 border-[#352200] pt-2 transition-all duration-300 ease-in-out">
+<span class="material-symbols-outlined" data-icon="self_improvement">self_improvement</span>
+<span class="font-sans text-[10px] tracking-[0.1em] font-bold uppercase">PRACTICE</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#8B9EAB] pt-2 transition-all duration-300 ease-in-out hover:text-[#162831]">
+<span class="material-symbols-outlined" data-icon="chat_bubble">chat_bubble</span>
+<span class="font-sans text-[10px] tracking-[0.1em] font-bold uppercase">MESSAGES</span>
+</div>
+</nav>
+</body></html>

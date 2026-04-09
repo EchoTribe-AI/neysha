@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Messaging Thread - YouX Companion</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-variant": "#e4e2df",
+                        "on-surface-variant": "#43474a",
+                        "primary-fixed": "#d2e5f1",
+                        "surface-tint": "#4f616b",
+                        "on-primary-container": "#96a9b4",
+                        "primary-fixed-dim": "#b6c9d5",
+                        "primary": "#162831",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-high": "#eae8e5",
+                        "outline-variant": "#c3c7ca",
+                        "inverse-on-surface": "#f2f0ed",
+                        "on-secondary-fixed": "#0a1e28",
+                        "inverse-primary": "#b6c9d5",
+                        "on-error-container": "#93000a",
+                        "inverse-surface": "#30312f",
+                        "on-secondary-container": "#536571",
+                        "on-secondary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "secondary": "#4e616d",
+                        "tertiary": "#352200",
+                        "on-tertiary-container": "#c5a065",
+                        "tertiary-container": "#503704",
+                        "background": "#fbf9f6",
+                        "surface-container-highest": "#e4e2df",
+                        "secondary-fixed": "#d2e5f3",
+                        "primary-container": "#2c3e47",
+                        "surface-bright": "#fbf9f6",
+                        "surface": "#fbf9f6",
+                        "on-background": "#1b1c1a",
+                        "tertiary-fixed": "#ffdeac",
+                        "tertiary-fixed-dim": "#e8c082",
+                        "on-primary": "#ffffff",
+                        "surface-container": "#efeeeb",
+                        "outline": "#73787b",
+                        "secondary-fixed-dim": "#b6c9d7",
+                        "on-surface": "#1b1c1a",
+                        "on-secondary-fixed-variant": "#374954",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed": "#0b1e26",
+                        "surface-container-low": "#f5f3f0",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed": "#281900",
+                        "secondary-container": "#cfe2f0",
+                        "on-tertiary-fixed-variant": "#5d420f",
+                        "error": "#ba1a1a",
+                        "on-primary-fixed-variant": "#374953",
+                        "surface-dim": "#dbdad7"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .tap-highlight-transparent {
+            -webkit-tap-highlight-color: transparent;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-primary font-body antialiased min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="bg-[#fbf9f6] dark:bg-slate-950 sticky top-0 z-50 flex justify-between items-center w-full px-6 py-4">
+<div class="flex items-center gap-4">
+<button class="active:scale-95 duration-200 hover:opacity-80 transition-opacity">
+<span class="material-symbols-outlined text-[#162831] dark:text-slate-100">arrow_back</span>
+</button>
+<div class="flex items-center gap-3">
+<div class="relative">
+<img alt="Neysha Avatar" class="w-10 h-10 rounded-full object-cover border-2 border-surface-container" data-alt="Close-up portrait of a serene woman with a soft smile in warm natural light, professional headshot style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsCOl3b_1eIPDopiNeT9XPzOJC-_qxTiTnh6y8ei-5gB4gsv-4Mz31ok1BUN4R1nuLb2QIC2SqK3mDJWDxKXLCT2a64lXiwZ0cW6woWUILaGkb_deQ7IkcvBeCzqFjurzXUW-3pGai-vRqqUhhwdtWvbhTdYvvcY9A3mR8geFMrabXeD1RdChtSWLCg6bm4fymnvhhg3t28XbKtiwTSXtrhyflDgIXhvL5QA9F8OC0CLgiyza80j4Qmh0Ea2jPFcGHz9oCvl8kQuI"/>
+<div class="absolute bottom-0 right-0 w-3 h-3 bg-tertiary-fixed-dim rounded-full border-2 border-[#fbf9f6]"></div>
+</div>
+<div class="flex flex-col">
+<h1 class="font-serif tracking-tighter text-lg font-bold text-[#162831] dark:text-slate-100 leading-tight">Neysha</h1>
+<span class="font-sans uppercase tracking-widest text-[9px] font-bold text-tertiary">Coach</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="active:scale-95 duration-200 hover:opacity-80 transition-opacity">
+<span class="material-symbols-outlined text-[#162831] dark:text-slate-100">more_vert</span>
+</button>
+</div>
+</header>
+<!-- Chat Canvas -->
+<main class="flex-grow overflow-y-auto px-6 py-8 flex flex-col gap-8 pb-32">
+<!-- Date Marker -->
+<div class="flex justify-center">
+<span class="font-sans uppercase tracking-[0.15em] text-[10px] font-bold text-on-surface-variant/60 bg-surface-container-low px-4 py-1 rounded-full">Today</span>
+</div>
+<!-- Coach Message 1 -->
+<div class="flex flex-col items-start max-w-[85%] group">
+<div class="bg-primary text-on-primary p-5 rounded-lg shadow-sm">
+<p class="text-sm leading-relaxed">How did your morning practice feel today?</p>
+</div>
+<span class="mt-2 font-sans uppercase tracking-widest text-[9px] font-semibold text-on-surface-variant/50">08:15 AM</span>
+</div>
+<!-- Client Message 1 -->
+<div class="flex flex-col items-end self-end max-w-[85%] group">
+<div class="bg-tertiary-fixed-dim text-tertiary p-5 rounded-lg shadow-sm">
+<p class="text-sm leading-relaxed">It was challenging but I felt more grounded.</p>
+</div>
+<div class="mt-2 flex items-center gap-1">
+<span class="font-sans uppercase tracking-widest text-[9px] font-semibold text-on-surface-variant/50">Seen</span>
+<span class="material-symbols-outlined text-[10px] text-tertiary-fixed-dim" style="font-variation-settings: 'FILL' 1;">done_all</span>
+</div>
+</div>
+<!-- Coach Message 2 -->
+<div class="flex flex-col items-start max-w-[85%] group">
+<div class="bg-primary text-on-primary p-5 rounded-lg shadow-sm">
+<p class="text-sm leading-relaxed">That's great progress. Remember to breathe through the resistance.</p>
+</div>
+<span class="mt-2 font-sans uppercase tracking-widest text-[9px] font-semibold text-on-surface-variant/50">08:22 AM</span>
+</div>
+<!-- Visual Placeholder for a shared resource or future message -->
+<div class="mt-4 p-8 border border-dashed border-outline-variant/30 rounded-lg flex flex-col items-center justify-center text-center opacity-40">
+<span class="material-symbols-outlined text-3xl mb-2">self_improvement</span>
+<p class="text-[11px] font-sans uppercase tracking-widest font-bold">End of session notes</p>
+</div>
+</main>
+<!-- Bottom Input Area -->
+<div class="fixed bottom-0 left-0 w-full bg-white dark:bg-slate-900 px-6 py-4 pb-safe flex items-center gap-4 border-t border-[#8B9EAB]/10">
+<button class="active:scale-95 transition-transform text-secondary">
+<span class="material-symbols-outlined">add_circle</span>
+</button>
+<div class="flex-grow relative">
+<label class="hidden">Message Neysha</label>
+<input class="w-full bg-surface-container-low border-none focus:ring-0 focus:border-b focus:border-tertiary text-sm py-3 px-4 rounded-sm placeholder:text-on-surface-variant/40 font-body" placeholder="Type your message..." type="text"/>
+</div>
+<button class="bg-primary text-on-primary p-3 rounded-sm active:scale-95 duration-200 flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary-fixed-dim">send</span>
+</button>
+</div>
+<!-- BottomNavBar (Suppressed based on Task-Focused/Messaging Context but following JSON structure for logic check) -->
+<!-- Navigation shell is excluded here as this is a deep focused messaging thread per the "Relevance Check" rule. -->
+</body></html>
